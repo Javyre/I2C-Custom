@@ -49,7 +49,7 @@ void loop()
 	{
 		for (int ii = 0; ii <= 1; ii++) {
 			lcd.setCursor(0, ii);
-			printLine((ii == 1) ? &tim : NULL, holder[ii]);
+			printLine((ii == 1) ? &tim : nullptr, holder[ii]);
 		}
 
 		shiftLines();
@@ -78,23 +78,23 @@ void resetHolder()
 	holder[1] = paragraph[lastLine];
 }
 
-void printLine(char *text)
+void printLine(char* text)
 {
 	printLine(nullptr, text);
 }
 
-void printLine(int *delayT, char *text)
+void printLine(int* delayT, char* text)
 {
 	for (int positionCounter1 = 0; positionCounter1 < 15; positionCounter1++)
 	{
 
 		lcd.print(text[positionCounter1]);  // Print a message to the LCD.
 
-		if (*delayT != NULL)
+		if (delayT != nullptr)
 		{
-			Serial.print(*delayT);
-			Serial.print(" : ");
-			Serial.println(tim);
+			//Serial.print(*delayT);
+			//Serial.print(" : ");
+			//Serial.println(tim);
 			delay(*delayT);
 		}
 		
