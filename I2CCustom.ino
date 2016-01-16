@@ -9,16 +9,16 @@ void resetHolder();
 void printLine(char*);
 void printLine(int*, char*);
 
-char *array0 = "               ";
-char *array1 = "something......";  //the string to print on the LCD
-char *array2 = "words are cool.";  //the string to print on the LCD
-char *array3 = "I am very nice.";
-char *array4 = "you are awesome";
-char *array5 = "Hello, World...";
+char* array0 = "               ";
+char* array1 = "something......";  //the string to print on the LCD
+char* array2 = "words are cool.";  //the string to print on the LCD
+char* array3 = "I am very nice.";
+char* array4 = "you are awesome";
+char* array5 = "Hello, World...";
 
-char *paragraph[6] = {array0, array1, array2, array3, array4, array5};
+char* paragraph[6] = {array0, array1, array2, array3, array4, array5};
 
-char *holder[2];
+char* holder[2];
 
 int lastLine;
 
